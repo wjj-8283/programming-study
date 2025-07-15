@@ -90,4 +90,4 @@ total = ['item_1', 'item_2', 'item_3',
 # Python允许你同时为多个变量赋值。例如：
 a = b = c = 1
 # 也可以为多个对象指定多个变量。例如：
-a, b, c = 1, 2, "runoob"
+a, b, c = 1, 2, "wjj"
