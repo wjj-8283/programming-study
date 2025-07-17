@@ -125,3 +125,34 @@ len(['wjj',12,[123,234,345]])       # 3
 len(('wjj',12,45,23.0))             # 4
 len({"123":124,"wjj":1024})         # 2
 len({112,123,123,124,124})          # 3
+
+# split()：将字符串拆分成列表
+# 语法：string.split(splitter)
+# string为待拆分的字符串，splitter为待拆分的字符串的分隔符
+# 示例：
+string1 = 'Hello World'
+string2 = 'I like You. You like me.'
+print(string1.split(" "))     # ['Hello', 'World']
+print(string2.split(". "))    # ['I like You', 'You like me.']
+
+# join()：将列表中的字符串在一定的分隔符下合并
+# 语法：splitter.join(list)
+# splitter为期望的分隔符，list为待合并的字符串组成的列表
+# 示例：
+list = ['I','Love','You']
+print(" ".join(list))   # I Love You
+print("❤️".join(list))  # I❤️Love❤️You
+
+# id()：用于返回对象的身份标识
+# 语法：def id(
+#     object: object,
+#     /
+# ) -> int
+# 返回对象的身份标识，该标识在同时存在的对象中保证唯一。在CPythonhon中，该标识为对象内存地址
+# 例如：
+a = 1
+b = 1
+c = 1
+print(id(a))
+print(id(b))
+print(id(c))
